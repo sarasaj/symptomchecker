@@ -1,0 +1,57 @@
+/* ******** PATIENT CSS start **********/
+#Home {
+  line-height: 1.7;
+}
+#Home h2 {
+  color: #005ea2;
+  transition: ease 0.2s;
+}
+/* ******** PATIENT CSS  end**********/
+/* *********PATIENT 2 CSS start ***********/
+
+#Patient2 {
+  line-height: 1.7;
+}
+
+.FormElement {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Fix alignment to center properly */
+}
+
+.radioButtonDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Use center or flex-start to align items properly */
+  margin-bottom: 15px; /* Add spacing between questions */
+}
+
+@media (max-width: 63.938em) {
+  .radioButtonDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Align items to the start for better spacing */
+    flex-direction: column;
+  }
+  
+  .FormElement {
+    display: flex;
+    justify-content: flex-start; /* Align the form content to the start */
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+
+
+/* .usa-radio__input:focus + .usa-radio__label::before {
+  outline: none;
+} */
+/* button:not([disabled]):focus,
+input:not([disabled]):focus,
+select:not([disabled]):focus,
+textarea:not([disabled]):focus {
+  outline: none;
+  outline-offset: 0;
+} */
+/* *********PATIENT 2 CSS end **********/
