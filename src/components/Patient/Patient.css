@@ -42,16 +42,14 @@
   }
 }
 
-
-
-/* .usa-radio__input:focus + .usa-radio__label::before {
-  outline: none;
-} */
-/* button:not([disabled]):focus,
-input:not([disabled]):focus,
-select:not([disabled]):focus,
-textarea:not([disabled]):focus {
-  outline: none;
-  outline-offset: 0;
-} */
-/* *********PATIENT 2 CSS end **********/
+/* Define a custom font style for specific question */
+.custom-font {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1rem; /* Adjust the size as needed */
+  color: #000; /* Optional: You can change the color too */
+}
+/* Add this in your Patient.css file */
+.female-label {
+  font-size: 30px; /* Adjust the size to your preference */
+  color:blue;
+}

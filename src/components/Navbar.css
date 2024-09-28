@@ -1,0 +1,77 @@
+/* General Navbar Container */
+.navbar-container {
+    background-color: #f8f9fa; /* Light background */
+    border-bottom: 2px solid #e5e5e5;
+    padding: 5px 20px; /* Reduced padding to make the navbar shorter */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    min-height: 60px; /* Adjusted to make the navbar shorter */
+  }
+  
+  /* Flexbox alignment for navbar */
+  .flex-row {
+    display: flex;
+  }
+  
+  .space-between {
+    justify-content: space-between;
+  }
+  
+  .align-center {
+    align-items: center;
+  }
+  
+  /* Logo and text section side by side */
+  .logo-section {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo-text {
+    margin-left: 10px;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  /* Experiment section */
+  .experiment-section {
+    display: flex;
+    align-items: center;
+  }
+  
+  .experiment-version {
+    margin-right: 20px;
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .text-size-control label {
+    font-size: 1rem;
+    margin-right: 10px;
+  }
+  
+  .text-size-control input[type="range"] {
+    width: 100px;
+  }
+  
+  /* Reduce navbar height */
+  .usa-header {
+    min-height: 60px; /* Adjust height */
+    padding: 5px 0;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .logo-text {
+      font-size: 1.2rem;
+    }
+  
+    .experiment-version {
+      font-size: 0.9rem;
+    }
+  
+    input[type="range"] {
+      width: 80px;
+    }
+  }
+  

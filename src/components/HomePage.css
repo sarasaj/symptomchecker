@@ -1,3 +1,9 @@
+/* Orange button style for the Patient page */
+.usa-button.orange {
+  background-color: orange;
+  color: white;
+}
+
 #main-content > .grid-container > .grid-row {
   border: 1px solid #555;
   border-radius: 1rem;
@@ -126,3 +132,9 @@
 	display: none;
   }
 }
+/* Example of custom styles for the Disease page */
+.disease-custom-style {
+  font-size: 24px; /* Adjust the size */
+  color: red; /* Change the color */
+}
+
