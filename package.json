@@ -4,6 +4,7 @@
   "description": "The DHILab Medical Symptom Checker helps you understand the possible causes of symptoms in children and adults.",
   "author": "Labinator.com",
   "license": "GPLv3",
+  "homepage": "https://sarasaj.github.io/symptomchecker",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.6.0",
     "@testing-library/jest-dom": "^4.2.4",
