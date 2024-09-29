@@ -144,7 +144,7 @@ class Symptom extends Component {
     
       <div id="#Symptoms" className="grid-row width-full">
         <div className="width-full flex-column flex-align-center">
-          <h3 style={{ marginBottom: "15px" }}> Please select the symptoms that you are experiencing from the list below</h3>
+          <h3 style={{ marginBottom: "15px" }}> Please select the symptoms that you are experiencing from the list below | قم بإدخال الأعراض التي تعاني منها في مربع الإدخال</h3>
           {/* <p> Search the symptoms in the search box below </p> */}
         </div>
         <div className="col-12 tablet:grid-col-5">
@@ -153,7 +153,7 @@ class Symptom extends Component {
             class="usa-input searchSymptomsInput"
             onKeyDown={this.keyDownEvent}
             onChange={this.getInputSymptoms}
-            placeholder="Search Symptoms"
+            placeholder="Search Symptoms | ابحث عن الأعراض"
             id="input-type-text"
             name="input-type-text"
             type="text"
@@ -190,7 +190,7 @@ class Symptom extends Component {
         </div>
         <div className="col-12 width-full display-flex flex-row flex-justify-start resetButton padding-left-2">
           <button onClick={this.on_click_reset_button} className="usa-button usa-button--secondary">
-            Reset
+            Reset | مسح
           </button>
         </div>
         

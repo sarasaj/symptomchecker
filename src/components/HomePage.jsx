@@ -238,7 +238,7 @@ class HomePage extends Component {
 				  <li id="progressbar"><div className={`${tab_progress === 25 && "progressbardiv25"} ${tab_progress === 50 && "progressbardiv50"} ${tab_progress === 75 && "progressbardiv75"} ${tab_progress === 100 && "progressbardiv100"}`}></div></li>
                   <li className={`${current_page === "Home" ? "active" : "done"}`}>Welcome</li>
                   <li className={`${tab_progress === 50 && "active"} ${tab_progress < 50 && "list"} ${tab_progress > 50 && "done"}`}>Patient</li>
-                  <li className={`${tab_progress === 75 && "active"} ${tab_progress < 75 && "list"} ${tab_progress > 75 && "done"}`}>Symptom</li>
+                  <li className={`${tab_progress === 75 && "active"} ${tab_progress < 75 && "list"} ${tab_progress > 75 && "done"} disease-custom-style`}>Symptom</li>
                   <li className={`${tab_progress === 100 && "active"} ${tab_progress < 100 && "list"} ${tab_progress > 100 && "done"}`}>Disease</li>
                 </ul>
               </div>
@@ -246,13 +246,28 @@ class HomePage extends Component {
                 <div className="grid-row padding-bottom-4 shoPageSection">{this.showPage()}</div>
               </div>
               <div className="desktop:grid-col-12">
+              
                 <div id="buttonsSection" className="grid-row display-flex padding-left-2 padding-right-2 padding-top-2">
-                  <button disabled={this.state.current_page === "Home"} onClick={this.get_previous_page} className="usa-button usa-button--outline back">
-                    Back
-                  </button>
-                  {/* {current_page === "Symptom" ? this.renderResetButton() : ""} */}
+                  
                   <button
-                    className={`usa-button ${button_is_disabled || patient_2_next_button_disabled || user_symptom_length === 0 ? "" : "next"}`}
+                  onClick={this.get_previous_page}
+                  className="usa-button usa-button--outline back"
+                  disabled={this.state.current_page === "Home"}
+                >
+                  {this.state.current_page === "Symptom" ? (
+                    <i className="fas fa-arrow-left"></i> // Font Awesome back arrow icon
+                  ) : (
+                    "Back"
+                  )}
+                </button>
+
+
+                  {/* {current_page === "Symptom" ? this.renderResetButton() : ""} */}
+                  
+                  <button
+                    className={`usa-button ${
+                      this.state.current_page === "Patient" ? "orange" : ""
+                    } ${button_is_disabled || patient_2_next_button_disabled || user_symptom_length === 0 ? "" : "next"}`}
                     disabled={button_is_disabled || patient_2_next_button_disabled || user_symptom_length === 0}
                     type="submit"
                     onClick={this.get_next_page}
